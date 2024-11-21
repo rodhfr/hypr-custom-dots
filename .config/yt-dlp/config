@@ -1,0 +1,15 @@
+#-f 299+ba/137+ba
+--write-auto-subs 
+--embed-subs 
+--no-mtime
+--sub-langs "en.*"
+--merge-output-format mkv
+--prefer-ffmpeg
+--replace-in-metadata "title,uploader" "[ _]" "-"
+--ignore-errors
+--socket-timeout=10
+--sponsorblock-remove all 
+--remux-video mkv
+--cookies-from-browser firefox
+--add-metadata
+--embed-thumbnail
