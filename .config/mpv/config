@@ -12,7 +12,7 @@ demuxer-thread=yes
 ytdl-raw-options=sub-lang="en",write-sub=,write-auto-sub=
 sub-font='Noto Color Emoji'
 script-opts=ytdl_hook-ytdl_path=/usr/bin/yt-dlp
-ytdl-format=299+ba/137+ba
+#ytdl-format=299+ba/137+ba
 
 audio-device=alsa/pipewire
 
