@@ -1,0 +1,24 @@
+watch-later-options=vid,aid,sid,volume,start,speed,sub-visibility
+hwdec=auto-safe
+save-position-on-quit=yes
+slang=en
+alang=jp
+demuxer-max-bytes=4GiB
+demuxer-max-back-bytes=1GiB
+cache=yes
+osd-fractions
+demuxer-hysteresis-secs=0
+demuxer-thread=yes
+ytdl-raw-options=sub-lang="en",write-sub=,write-auto-sub=
+sub-font='Noto Color Emoji'
+script-opts=ytdl_hook-ytdl_path=/usr/bin/yt-dlp
+#ytdl-format=299+ba/137+ba
+
+audio-device=alsa/pipewire
+
+[cache]
+profile-desc="hardware acceleration, cache, yt-dlp 1080 or less"
+# include hwdec profile 
+profile=hwdec
+# override hwdec profile cache setting
+cache=auto
