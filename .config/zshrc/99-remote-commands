@@ -1,0 +1,7 @@
+alias wingsopen='WAYLAND_DISPLAY=wayland-1 firefox'
+alias wingscopy='WAYLAND_DISPLAY=wayland-1 wl-copy'
+wcopy() {
+    echo "$1" | wingscopy
+}
+
+
