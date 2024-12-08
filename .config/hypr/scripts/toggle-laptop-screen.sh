@@ -2,12 +2,14 @@
 
 # File to track the state of the script (running or not)
 STATE_FILE="hotkey_switch"
+MONITOR_SWITCH="monitor_switch"
 
 # Check if the script is already running
 if [ -f "$STATE_FILE" ]; then
     # If running, stop the script (e.g., kill the process)
     pkill -f "monitor.sh"
     rm "$STATE_FILE"
+    rm "$MONITOR_SWITCH"
     pkill dunst
     dunst &
     notify-send -i laptop "Laptop Screen" "Auto power state disabled"
